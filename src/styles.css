@@ -1,0 +1,122 @@
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46);
+  }
+  
+  .title {
+    font-size: 50px;
+    color: #FFF;
+    animation: flipTitle 2s;
+  }
+  
+  @keyframes flipTitle {
+    from {
+      transform: rotateX(90deg);
+    }
+    to {
+      transform: rotateX(0deg);
+    }
+  }
+  
+  .containerInput {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .boxCad {
+    height: 50vh;
+    padding: 25px;
+    border-radius: 8px;
+    border-width: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    transition: background 0.2s;
+  }
+
+  .inputs {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    margin-right: 8px;
+  }
+  
+  .containerInput input::placeholder {
+    color: #F1F1F1;
+  }
+  
+  .boxButton {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .buttonCad {
+    border-radius: 8px;
+    width: 10vw;
+    height: 5vh;
+    background-color: white;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  
+  .buttonCad:hover {
+    transform: scale(1.05);
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#FFF;
+    width: 500px;
+    border-radius: 8px;
+  }
+  
+  .main h2 {
+    margin: 16px 0;
+    font-size: 39px;
+  }
+  
+  .main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 690px) {
+    .title {
+      font-size: 60px;
+    }
+    .main h2 {
+      font-size: 28px;
+    }
+    .main {
+      width: 80%;
+      min-height: 250px;
+    }
+  }
+  
